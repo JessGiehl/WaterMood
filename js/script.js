@@ -34,12 +34,14 @@ function searchResults(){
             <img src="${myJson.results[i].urls.regular}"
                  srcset="${myJson.results[i].urls.regular} 1024w, ${myJson.results[i].urls.regular} 640w, ${myJson.results[i].urls.regular} 320w"
                  sizes="(min-width: 36em) 33.3vw, 100vw"
-                 alt="A photo of water" />`
-              // <img src="${myJson.topalbums.album[i].image[3]['#text']}">
-              // <h3>${myJson.topalbums.album[i].name}</h3>
-              // <p>${myJson.topalbums.album[i].artist.name}</p>
-              // <p><a href="${myJson.topalbums.album[i].url}">${myJson.topalbums.album[i].name}</a></p>
-            // </li>`
+                 alt="A photo of water" />
+
+          </li>`
+
+             // <img src="${myJson.topalbums.album[i].image[3]['#text']}">
+             // <h3>${myJson.topalbums.album[i].name}</h3>
+             // <p>${myJson.topalbums.album[i].artist.name}</p>
+             // <p><a href="${myJson.topalbums.album[i].url}">${myJson.topalbums.album[i].name}</a></p>
         }
         output += `</ul>`;
 
