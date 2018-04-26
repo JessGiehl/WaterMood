@@ -20,11 +20,6 @@ function searchResults(){
     })
     .then(function(myJson) {
       console.log(myJson);
-      if (myJson.hasOwnProperty('error')){
-        var error = `<p class="error">${myJson.message}</p>`;
-        document.querySelector('section').insertAdjacentHTML('afterbegin', error);
-      } else {
-
         //create a string to store adjacentHTML
         var output = `<ul class="photogallery">`;
         //create list items for 9 albums
@@ -36,8 +31,7 @@ function searchResults(){
                  sizes="(min-width: 36em) 33.3vw, 100vw"
                  alt="A photo of water" />
 
-          </li>`
-
+          </li>`;
              // <img src="${myJson.topalbums.album[i].image[3]['#text']}">
              // <h3>${myJson.topalbums.album[i].name}</h3>
              // <p>${myJson.topalbums.album[i].artist.name}</p>
@@ -46,7 +40,6 @@ function searchResults(){
         output += `</ul>`;
 
         document.querySelector('section').insertAdjacentHTML('afterbegin', output);
-      }
     })
     .catch(error => console.error(error));
 }
