@@ -1,4 +1,4 @@
-section, header, footer, li, svg {
+section, header, footer, li img, svg {
   margin-left: auto;
   margin-right: auto; }
 
@@ -17,7 +17,8 @@ li {
   margin: 1rem;
   width: 80%; }
   li img {
-    width: auto; }
+    width: auto;
+    display: block; }
 
 svg {
   display: block;
