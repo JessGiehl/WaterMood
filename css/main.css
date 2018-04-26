@@ -1,4 +1,4 @@
-section, header, footer, li img, svg {
+section, header, footer, li, li img, svg {
   margin-left: auto;
   margin-right: auto; }
 
@@ -12,6 +12,10 @@ section, header, footer {
 h1 {
   text-align: center;
   font-size: 2rem; }
+
+ul {
+  padding: 0;
+  margin: 0; }
 
 li {
   margin: 1rem;
