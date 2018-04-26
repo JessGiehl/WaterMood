@@ -39,6 +39,8 @@ function searchResults(){
         }
         output += `</ul>`;
 
+        console.log(output);
+
         document.querySelector('section').insertAdjacentHTML('afterbegin', output);
     })
     .catch(error => console.error(error));
