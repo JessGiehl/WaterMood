@@ -9,7 +9,7 @@ function searchResults(){
 
   //variables for storing api string
   var url = 'https://api.unsplash.com/search/photos';
-  var search = '&query=water';
+  var search = '&query=water&orientation=squarish&per_page=9';
   var key = '?client_id=f650c7a43fd96d6cf7d6f23fb570fc123974acce8118a86ec0e9e5f3860bffba';
 
   //construct string and fetch response
@@ -22,7 +22,6 @@ function searchResults(){
       console.log(myJson);
         //create a string to store adjacentHTML
         var output = `<ul class="photogallery">`;
-        console.log(output);
         //create list items for 9 albums
         for (var i = 0; i < 9; i++) {
           output +=
@@ -38,8 +37,6 @@ function searchResults(){
              // <p><a href="${myJson.topalbums.album[i].url}">${myJson.topalbums.album[i].name}</a></p>
         }
         output += `</ul>`;
-
-        console.log(output);
 
         document.querySelector('section').insertAdjacentHTML('afterbegin', output);
     })
