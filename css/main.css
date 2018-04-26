@@ -1,4 +1,4 @@
-body {
+section, header, footer {
   margin-left: auto;
   margin-right: auto; }
 
@@ -6,9 +6,13 @@ body {
   font-family: "Program OT", Arial, sans-serif;
   font-size: 1.28rem; }
 
+section, header, footer {
+  padding: 2rem; }
+
 h1 {
   font-size: 2rem; }
 
 li {
   width: 300px;
-  height: 300px; }
+  height: 300px;
+  margin: 1rem; }
