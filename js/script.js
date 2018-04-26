@@ -27,7 +27,7 @@ function searchResults(){
           output +=
           `<li>
             <img src="${myJson.results[i].urls.regular}"
-                 srcset="${myJson.results[i].urls.regular} 1024w, ${myJson.results[i].urls.regular} 640w, ${myJson.results[i].urls.regular} 320w"
+                 srcset="${myJson.results[i].urls.raw} 1024w, ${myJson.results[i].urls.regular} 640w, ${myJson.results[i].urls.small} 320w"
                  sizes="(min-width: 36em) 33.3vw, 100vw"
                  alt= "A photo of water" />
           </li>`;
