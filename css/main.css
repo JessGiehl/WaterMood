@@ -10,11 +10,13 @@ section, header, footer {
   padding: 1.5rem; }
 
 h1 {
+  text-align: center;
   font-size: 2rem; }
 
 li {
   margin: 1rem; }
 
 svg {
+  display: block;
   padding: 0;
   margin: 0; }
