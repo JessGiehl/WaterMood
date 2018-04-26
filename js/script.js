@@ -22,6 +22,7 @@ function searchResults(){
       console.log(myJson);
         //create a string to store adjacentHTML
         var output = `<ul class="photogallery">`;
+        console.log(output);
         //create list items for 9 albums
         for (var i = 0; i < 9; i++) {
           output +=
@@ -29,8 +30,7 @@ function searchResults(){
             <img src="${myJson.results[i].urls.regular}"
                  srcset="${myJson.results[i].urls.regular} 1024w, ${myJson.results[i].urls.regular} 640w, ${myJson.results[i].urls.regular} 320w"
                  sizes="(min-width: 36em) 33.3vw, 100vw"
-                 alt="A photo of water" />
-
+                 alt= "A photo of water" />
           </li>`;
              // <img src="${myJson.topalbums.album[i].image[3]['#text']}">
              // <h3>${myJson.topalbums.album[i].name}</h3>
