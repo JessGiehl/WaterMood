@@ -1,4 +1,4 @@
-section, header, footer {
+section, header, footer, h1, svg {
   margin-left: auto;
   margin-right: auto; }
 
@@ -13,8 +13,6 @@ h1 {
   font-size: 2rem; }
 
 li {
-  width: 300px;
-  height: 300px;
   margin: 1rem; }
 
 svg {
