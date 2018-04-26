@@ -14,7 +14,10 @@ h1 {
   font-size: 2rem; }
 
 li {
-  margin: 1rem; }
+  margin: 1rem;
+  width: 80%; }
+  li img {
+    width: auto; }
 
 svg {
   display: block;
