@@ -52,16 +52,16 @@ li {
   @media (min-width: 1015px) {
     li {
       width: calc(100% / 3 - 1rem);
-      height: 280px;
+      height: 270px;
       overflow: hidden;
       margin: .5rem; }
       li .metadata {
         position: absolute;
-        bottom: -280px;
+        bottom: -270px;
         opacity: 0;
         width: 100%;
         height: 100%;
-        padding-left: 1rem;
+        padding-left: .5rem;
         transition: transform .4s ease-in-out; }
         li .metadata svg path {
           fill: #eeeeee; }
@@ -92,7 +92,8 @@ footer {
   text-align: center; }
 
 .metadata svg {
-  padding-right: .3rem; }
+  margin-right: .5rem;
+  margin-left: .5rem; }
 
 svg + p {
   display: inline-block; }
