@@ -62,16 +62,16 @@ li {
         width: 100%;
         height: 100%;
         padding-left: .5rem;
-        transition: transform .4s ease-in-out; }
-        li .metadata svg path {
-          fill: #eeeeee; }
-        li .metadata p {
-          font-size: 1.2rem;
-          color: #eeeeee; }
+        transition: all .4s ease-in-out; }
       li:hover .metadata {
-        transform: translateY(-75px);
+        transform: translateY(-70px);
         opacity: 1;
-        background-color: rgba(36, 36, 36, 0.6); } }
+        background-color: rgba(36, 36, 36, 0.6); }
+      li p {
+        font-size: 1.2rem;
+        color: #eeeeee; }
+      li svg path {
+        fill: #eeeeee; } }
   li img {
     width: 100%;
     display: block; }
