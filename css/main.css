@@ -99,15 +99,22 @@ svg + p {
 
 .rockboat {
   animation-name: rock;
-  animation-duration: 5s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out; }
 
 @keyframes rock {
   0% {
+    transform: translateY(0) rotate(0deg); }
+  20% {
+    transform: translateY(-10px) rotate(15deg); }
+  40% {
+    transform: translateY(5px) rotate(-1deg); }
+  60% {
     transform: translateY(0) rotate(0); }
-  25% {
-    transform: translateY(-10px) rotate(10deg); }
   75% {
-    transform: translateY(10px) rotate(-10deg); }
+    transform: translateY(3px) rotate(0deg); }
+  90% {
+    transform: translateY(0px) rotate(0deg); }
   100% {
-    transform: translateY(0) rotate(0); } }
+    transform: translateY(0px) rotate(0deg); } }
