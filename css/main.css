@@ -1,4 +1,4 @@
-section, header, footer, .boat, li, li img {
+section, header, footer, .boat, .quote, li, li img {
   margin-left: auto;
   margin-right: auto; }
 
@@ -18,6 +18,13 @@ h1 {
 .boat {
   width: 96px; }
 
+.quote {
+  font-style: italic;
+  font-size: .8rem;
+  margin-bottom: 0;
+  width: 350px;
+  text-align: center; }
+
 @media (min-width: 950px) {
   section {
     width: 950px; } }
@@ -33,7 +40,7 @@ ul {
       width: 100%; } }
 
 li {
-  margin: 0, .5rem, 1rem, .5rem;
+  margin-bottom: 1rem;
   width: 90%;
   position: relative; }
   @media (min-width: 950px) {
@@ -48,13 +55,15 @@ li {
         opacity: 0;
         width: 100%;
         height: 100%;
-        text-align: center;
+        padding-left: 1rem;
         transition: transform .4s ease-in-out; }
+        li .metadata svg path {
+          fill: #eeeeee; }
         li .metadata p {
           font-size: 1.2rem;
           color: #eeeeee; }
       li:hover .metadata {
-        transform: translateY(-70px);
+        transform: translateY(-75px);
         opacity: 1;
         background-color: rgba(36, 36, 36, 0.6); } }
   li img {
@@ -75,3 +84,24 @@ li {
 footer {
   font-size: .8rem;
   text-align: center; }
+
+.metadata svg {
+  padding-right: .3rem; }
+
+svg + p {
+  display: inline-block; }
+
+.rockboat {
+  animation-name: rock;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out; }
+
+@keyframes rock {
+  0% {
+    transform: translateY(0) rotate(0); }
+  25% {
+    transform: translateY(-10px) rotate(10deg); }
+  75% {
+    transform: translateY(10px) rotate(-10deg); }
+  100% {
+    transform: translateY(0) rotate(0); } }
